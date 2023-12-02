@@ -50,6 +50,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Intermediate"/>
+
+        <Button
+            android:id="@+id/button_tutorials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutorials"
+            android:layout_marginTop="8dp"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
 
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
@@ -49,6 +50,17 @@ class MainActivity : AppCompatActivity() {
         buttonIntermediate.setOnClickListener {
             navController.navigate(R.id.intermediateFragment)
         }
+
+        val buttonTutorials = findViewById<Button>(R.id.button_tutorials)
+        buttonTutorials.setOnClickListener {
+            // Create a bundle to pass the URL argument
+            val bundle = Bundle()
+            bundle.putString("url", "https://www.youtube.com/watch?v=U6-X_QOwPcs&list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp-")
+
+            // Navigate using the destination ID and pass the bundle
+            navController.navigate(R.id.webViewFragment, bundle)
+        }
+
     }
 
     // Optional: Override onSupportNavigateUp if you have an ActionBar or Toolbar

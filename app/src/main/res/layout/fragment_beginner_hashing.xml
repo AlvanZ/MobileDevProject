@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Design Hashmap -->
+    <TextView
+        android:id="@+id/textViewDesignHashmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Design HashMap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewDesignHashmap"
+        app:layout_constraintTop_toTopOf="@id/textViewDesignHashmap" />
+
+    <!-- Design Hashset -->
+    <TextView
+        android:id="@+id/textViewDesignHashset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Design HashSet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonGo"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonDesignHashset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewDesignHashset"
+        app:layout_constraintTop_toTopOf="@id/textViewDesignHashset" />
+
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonDesignHashset"
+        app:layout_constraintVertical_bias="0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

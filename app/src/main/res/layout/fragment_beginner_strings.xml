@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Reverse Bits -->
+    <TextView
+        android:id="@+id/textViewReverseBits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reverse Bits"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewReverseBits"
+        app:layout_constraintTop_toTopOf="@id/textViewReverseBits" />
+
+    <!-- Palindrome Number -->
+    <TextView
+        android:id="@+id/textViewPalindromeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Palindrome Number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonGo"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonPalindromeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewPalindromeNumber"
+        app:layout_constraintTop_toTopOf="@id/textViewPalindromeNumber" />
+
+    <!-- Valid Palindrome -->
+    <TextView
+        android:id="@+id/textViewValidPalindrome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valid Palindrome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonPalindromeNumber"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonValidPalindrome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewValidPalindrome"
+        app:layout_constraintTop_toTopOf="@id/textViewValidPalindrome" />
+
+    <!-- Longest Palindrome -->
+    <TextView
+        android:id="@+id/textViewLongestPalindrome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longest Palindrome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonValidPalindrome"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonLongestPalindrome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewLongestPalindrome"
+        app:layout_constraintTop_toTopOf="@id/textViewLongestPalindrome" />
+
+    <!-- Fizz Buzz -->
+    <TextView
+        android:id="@+id/textViewFizzBuzz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fizz Buzz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonLongestPalindrome"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonFizzBuzz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewFizzBuzz"
+        app:layout_constraintTop_toTopOf="@id/textViewFizzBuzz" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonFizzBuzz"
+        app:layout_constraintVertical_bias="0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

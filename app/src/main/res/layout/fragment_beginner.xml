@@ -6,10 +6,11 @@
     android:gravity="center"
     android:padding="16dp">
 
+    <!-- Arrays Section -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Arrays"
+        android:text="Beginner Problem Types"
         android:textAppearance="?attr/textAppearanceHeadline6"
         android:layout_marginBottom="8dp"/>
 
@@ -24,7 +25,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Two Sum"
+            android:text="Arrays"
             android:textAppearance="?attr/textAppearanceBody1"/>
 
         <Button
@@ -34,22 +35,60 @@
             android:text="Open"/>
     </LinearLayout>
 
-
-
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- Strings Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Beginner Problems"
-        android:textAppearance="?attr/textAppearanceHeadline5"
-        android:layout_marginBottom="20dp"/>
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp">
 
+        <TextView
+            android:id="@+id/text_problem_name_strings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Strings"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+
+        <Button
+            android:id="@+id/button_open_strings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"/>
+    </LinearLayout>
+
+    <!-- Hashing Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/text_problem_name_hashing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hashing"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+
+        <Button
+            android:id="@+id/button_open_hashing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"/>
+    </LinearLayout>
+
+    <!-- Back Button -->
     <Button
         android:id="@+id/button_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
         android:drawableLeft="@drawable/baseline_arrow_left_24"
-    android:layout_gravity="bottom|center_horizontal"
-    android:layout_marginTop="20dp"/>
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>

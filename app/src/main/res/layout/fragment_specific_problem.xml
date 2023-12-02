@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Two Sum Problem -->
+    <TextView
+        android:id="@+id/textViewProblemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Two Sum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewProblemTitle"
+        app:layout_constraintTop_toTopOf="@id/textViewProblemTitle" />
+
+    <!-- Distribute Candies Problem -->
+    <TextView
+        android:id="@+id/textViewDistributeCandies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distribute Candies"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonGo"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/buttonDistributeCandies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewDistributeCandies"
+        app:layout_constraintTop_toTopOf="@id/textViewDistributeCandies" />
+
+    <!-- Single Number Problem -->
+    <TextView
+        android:id="@+id/textViewSingleNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single Number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonDistributeCandies"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/buttonSingleNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewSingleNumber"
+        app:layout_constraintTop_toTopOf="@id/textViewSingleNumber" />
+
+    <!-- Majority Element Problem -->
+    <TextView
+        android:id="@+id/textViewMajorityElement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Majority Element"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSingleNumber"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/buttonMajorityElement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewMajorityElement"
+        app:layout_constraintTop_toTopOf="@id/textViewMajorityElement" />
+
+    <!-- Missing Number Problem -->
+    <TextView
+        android:id="@+id/textViewMissingNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Missing Number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonMajorityElement"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/buttonMissingNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewMissingNumber"
+        app:layout_constraintTop_toTopOf="@id/textViewMissingNumber" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonMissingNumber"
+        app:layout_constraintVertical_bias="0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
