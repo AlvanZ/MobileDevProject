@@ -3,7 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <TextView
+        android:id="@+id/HashingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hashing"
+        android:layout_marginStart="175dp"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
     <!-- Design Hashmap -->
     <TextView
         android:id="@+id/textViewDesignHashmap"
@@ -11,7 +20,10 @@
         android:layout_height="wrap_content"
         android:text="Design HashMap"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/HashingText"
+        android:paddingTop="20dp"
+        android:paddingRight="200dp"
+        android:paddingBottom="20dp"
         app:layout_constraintVertical_bias="0.05" />
 
     <Button
@@ -29,7 +41,10 @@
         android:layout_height="wrap_content"
         android:text="Design HashSet"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonGo"
+        android:paddingTop="20dp"
+        android:paddingRight="208dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewDesignHashmap"
         app:layout_constraintVertical_bias="0.05" />
 
     <Button
@@ -47,6 +62,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="400dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonDesignHashset"
         app:layout_constraintVertical_bias="0.1" />

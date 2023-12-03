@@ -3,21 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="16dp">
 
-    <!-- Arrays Section -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Beginner Problem Types"
         android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_gravity="center"
         android:layout_marginBottom="8dp"/>
-
+    <!-- Arrays Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="100dp"
         android:gravity="center_vertical">
 
         <TextView
@@ -88,7 +88,7 @@
         android:layout_height="wrap_content"
         android:text="Back"
         android:drawableLeft="@drawable/baseline_arrow_left_24"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginTop="20dp"/>
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="170dp"/>
 
 </LinearLayout>

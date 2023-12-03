@@ -3,15 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <TextView
+        android:id="@+id/QueueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Queue"
+        android:layout_marginStart="175dp"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
     <!-- Group Anagrams -->
     <TextView
         android:id="@+id/textViewGroupAnagrams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingRight="150dp"
+        android:paddingBottom="20dp"
         android:text="Flatten Nested List Iterator"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/QueueText"
         app:layout_constraintVertical_bias="0.05" />
 
     <Button
@@ -28,6 +40,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Design Front Middle Back Queue"
+        android:paddingTop="20dp"
+        android:paddingRight="115dp"
+        android:paddingBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonGo"
         app:layout_constraintVertical_bias="0.05" />
@@ -46,6 +61,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Maximum Sum Circular Sub Array"
+        android:paddingTop="20dp"
+        android:paddingRight="108dp"
+        android:paddingBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonFrontMiddleBackQueue"
         app:layout_constraintVertical_bias="0.05" />
@@ -64,6 +82,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="175dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonMaximumSumCircularSubArray"
         app:layout_constraintVertical_bias="0.1" />

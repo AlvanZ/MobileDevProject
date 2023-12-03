@@ -3,15 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <TextView
+        android:id="@+id/LinkedListText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinkedList"
+        android:layout_marginStart="175dp"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
     <!-- Sort List -->
     <TextView
         android:id="@+id/textViewSortList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sort List"
+        android:paddingTop="20dp"
+        android:paddingRight="260dp"
+        android:paddingBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LinkedListText"
         app:layout_constraintVertical_bias="0.05" />
 
     <Button
@@ -28,6 +40,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rotate List"
+        android:paddingTop="20dp"
+        android:paddingRight="247dp"
+        android:paddingBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonGoSortList"
         app:layout_constraintVertical_bias="0.05" />
@@ -46,6 +61,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Partition List"
+        android:paddingTop="20dp"
+        android:paddingRight="237dp"
+        android:paddingBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonRotateList"
         app:layout_constraintVertical_bias="0.05" />
@@ -64,6 +82,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="320dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonPartitionList"
         app:layout_constraintVertical_bias="0.1" />

@@ -3,15 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <TextView
+        android:id="@+id/StacksText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stacks"
+        android:layout_marginStart="175dp"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
     <!-- Group Anagrams -->
     <TextView
         android:id="@+id/textViewGroupAnagrams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Min Stack"
+        android:paddingTop="20dp"
+        android:paddingRight="240dp"
+        android:paddingBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/StacksText"
         app:layout_constraintVertical_bias="0.05" />
 
     <Button
@@ -28,6 +40,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Online Stock Span"
+        android:paddingTop="20dp"
+        android:paddingRight="190dp"
+        android:paddingBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonGo"
         app:layout_constraintVertical_bias="0.05" />
@@ -46,6 +61,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Decode String"
+        android:paddingTop="20dp"
+        android:paddingRight="215dp"
+        android:paddingBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonOnlineStockSpan"
         app:layout_constraintVertical_bias="0.05" />
@@ -64,6 +82,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="175dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonDecodeString"
         app:layout_constraintVertical_bias="0.1" />

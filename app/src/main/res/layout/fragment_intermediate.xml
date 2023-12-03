@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    android:padding="20dp"
+    >
 
     <!-- Title -->
     <TextView
@@ -12,15 +12,15 @@
         android:layout_height="wrap_content"
         android:text="Intermediate Problem Types"
         android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_gravity="center"
         android:layout_marginBottom="8dp"/>
-
     <!-- Hashing Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="100dp">
 
         <TextView
             android:id="@+id/text_problem_name_hashing"
