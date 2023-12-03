@@ -68,8 +68,30 @@
     <fragment
         android:id="@+id/intermediateFragment"
         android:name="com.example.codingpractice.IntermediateFragment"
-        android:label="Intermediate Problems"
-        tools:layout="@layout/fragment_intermediate" />
+        android:label="Beginner Problems"
+        tools:layout="@layout/fragment_intermediate">
+        <action
+            android:id="@+id/action_intermediateFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+        <action
+            android:id="@+id/action_intermediateFragment_to_intHashingProblemFragment"
+            app:destination="@id/intHashingProblemFragment" />
+        <action
+            android:id="@+id/action_intermediateFragment_to_intHeapsProblemFragment"
+            app:destination="@id/intHeapsProblemFragment" />
+        <action
+            android:id="@+id/action_intermediateFragment_to_intLinkedListsProblemFragment"
+            app:destination="@id/intLinkedListsProblemFragment" />
+        <action
+            android:id="@+id/action_intermediateFragment_to_intQueuesProblemFragment"
+            app:destination="@id/intQueuesProblemFragment" />
+        <action
+            android:id="@+id/action_intermediateFragment_to_intStacksProblemFragment"
+            app:destination="@id/intStacksProblemFragment" />
+        <action
+            android:id="@+id/action_intermediateFragment_to_intTreesProblemFragment"
+            app:destination="@id/intTreesProblemFragment" />
+    </fragment>
 
     <!-- Define the webViewFragment with an argument for the URL -->
     <fragment
@@ -102,5 +124,47 @@
         android:name="com.example.codingpractice.BegHashingProblemFragment"
         android:label="BegHashingProblemFragment"
         tools:layout="@layout/fragment_beginner_hashing" />
+
+    <!-- Define IntHashingProblemFragment -->
+    <fragment
+        android:id="@+id/intHashingProblemFragment"
+        android:name="com.example.codingpractice.IntHashingProblemFragment"
+        android:label="IntHashingProblemFragment"
+        tools:layout="@layout/fragment_intermediate_hashing" />
+
+    <!-- Define IntHeapsProblemFragment -->
+    <fragment
+        android:id="@+id/intHeapsProblemFragment"
+        android:name="com.example.codingpractice.IntHeapsProblemFragment"
+        android:label="IntHeapsProblemFragment"
+        tools:layout="@layout/fragment_intermediate_heaps" />
+
+    <!-- Define IntLinkedListsProblemFragment -->
+    <fragment
+        android:id="@+id/intLinkedListsProblemFragment"
+        android:name="com.example.codingpractice.IntLinkedListsProblemFragment"
+        android:label="IntLinkedListsProblemFragment"
+        tools:layout="@layout/fragment_intermediate_linkedlists" />
+
+    <!-- Define IntQueuesProblemFragment -->
+    <fragment
+        android:id="@+id/intQueuesProblemFragment"
+        android:name="com.example.codingpractice.IntQueuesProblemFragment"
+        android:label="IntQueuesProblemFragment"
+        tools:layout="@layout/fragment_intermediate_queues" />
+
+    <!-- Define IntStacksProblemFragment -->
+    <fragment
+        android:id="@+id/intStacksProblemFragment"
+        android:name="com.example.codingpractice.IntStacksProblemFragment"
+        android:label="IntStacksProblemFragment"
+        tools:layout="@layout/fragment_intermediate_stacks" />
+
+    <!-- Define IntTreesProblemFragment -->
+    <fragment
+        android:id="@+id/intTreesProblemFragment"
+        android:name="com.example.codingpractice.IntTreesProblemFragment"
+        android:label="IntTreesProblemFragment"
+        tools:layout="@layout/fragment_intermediate_trees" />
 
 </navigation>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Sort List -->
+    <TextView
+        android:id="@+id/textViewSortList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort List"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonGoSortList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewSortList"
+        app:layout_constraintTop_toTopOf="@id/textViewSortList" />
+
+    <!-- Rotate List -->
+    <TextView
+        android:id="@+id/textViewRotateList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotate List"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonGoSortList"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonRotateList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewRotateList"
+        app:layout_constraintTop_toTopOf="@id/textViewRotateList" />
+
+    <!-- Partition List -->
+    <TextView
+        android:id="@+id/textViewPartitionList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partition List"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonRotateList"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonPartitionList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewPartitionList"
+        app:layout_constraintTop_toTopOf="@id/textViewPartitionList" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonPartitionList"
+        app:layout_constraintVertical_bias="0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

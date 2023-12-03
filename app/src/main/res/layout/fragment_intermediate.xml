@@ -6,13 +6,153 @@
     android:gravity="center"
     android:padding="16dp">
 
+    <!-- Title -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Intermediate Problems"
-        android:textAppearance="?attr/textAppearanceHeadline5"
-        android:layout_marginBottom="20dp"/>
+        android:text="Intermediate Problem Types"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginBottom="8dp"/>
 
+    <!-- Hashing Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/text_problem_name_hashing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hashing"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+
+        <Button
+            android:id="@+id/button_open_hashing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"/>
+    </LinearLayout>
+
+    <!-- Stacks Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/text_problem_name_stacks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stacks"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+
+        <Button
+            android:id="@+id/button_open_stacks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"/>
+    </LinearLayout>
+
+    <!-- Queues Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/text_problem_name_queues"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Queues"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+
+        <Button
+            android:id="@+id/button_open_queues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"/>
+    </LinearLayout>
+
+    <!-- Linked Lists Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/text_problem_name_linkedlists"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Linked Lists"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+
+        <Button
+            android:id="@+id/button_open_linkedlists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"/>
+    </LinearLayout>
+
+    <!-- Trees Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/text_problem_name_trees"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Trees"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+
+        <Button
+            android:id="@+id/button_open_trees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"/>
+    </LinearLayout>
+
+    <!-- Heaps Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/text_problem_name_heaps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Heaps"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+
+        <Button
+            android:id="@+id/button_open_heaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"/>
+    </LinearLayout>
+
+    <!-- Back Button -->
     <Button
         android:id="@+id/button_back"
         android:layout_width="wrap_content"

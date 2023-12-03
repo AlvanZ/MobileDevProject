@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Insert Into A Binary Search Tree -->
+    <TextView
+        android:id="@+id/textViewGroupAnagrams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert Into A Binary Search Tree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewGroupAnagrams"
+        app:layout_constraintTop_toTopOf="@id/textViewGroupAnagrams" />
+
+    <!-- Binary Tree Right Side View -->
+    <TextView
+        android:id="@+id/textViewValidSudoku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Binary Tree Right Side View"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonGo"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonBinaryTreeRightSideView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewValidSudoku"
+        app:layout_constraintTop_toTopOf="@id/textViewValidSudoku" />
+
+    <!-- Trim A Biinary Search Tree -->
+    <TextView
+        android:id="@+id/textViewSortColors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trim A Binary Search Tree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonBinaryTreeRightSideView"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonTrimABinarySearchTree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewSortColors"
+        app:layout_constraintTop_toTopOf="@id/textViewSortColors" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonTrimABinarySearchTree"
+        app:layout_constraintVertical_bias="0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

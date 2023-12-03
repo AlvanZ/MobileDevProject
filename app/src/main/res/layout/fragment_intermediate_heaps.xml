@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Car Pooling -->
+    <TextView
+        android:id="@+id/textViewCarPooling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Pooling"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonGoCarPooling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewCarPooling"
+        app:layout_constraintTop_toTopOf="@id/textViewCarPooling" />
+
+    <!-- Sort an Array -->
+    <TextView
+        android:id="@+id/textViewSortAnArray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort an Array"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonGoCarPooling"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonSortAnArray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewSortAnArray"
+        app:layout_constraintTop_toTopOf="@id/textViewSortAnArray" />
+
+    <!-- Longest Happy String-->
+    <TextView
+        android:id="@+id/textViewLongestHappyString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longest Happy String"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSortAnArray"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonLongestHappyString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@id/textViewLongestHappyString"
+        app:layout_constraintTop_toTopOf="@id/textViewLongestHappyString" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonLongestHappyString"
+        app:layout_constraintVertical_bias="0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -63,7 +63,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    // Optional: Override onSupportNavigateUp if you have an ActionBar or Toolbar
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }

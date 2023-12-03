@@ -5,56 +5,42 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.codingpractice.databinding.FragmentBeginnerStringsBinding
+import com.example.codingpractice.databinding.FragmentIntermediateLinkedlistsBinding
 import androidx.navigation.fragment.findNavController
 import android.content.Intent
 import android.net.Uri
 
-class BegStringsProblemFragment : Fragment() {
-    private var _binding: FragmentBeginnerStringsBinding? = null
+class IntLinkedListsProblemFragment : Fragment() {
+    private var _binding: FragmentIntermediateLinkedlistsBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentBeginnerStringsBinding.inflate(inflater, container, false)
+        _binding = FragmentIntermediateLinkedlistsBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonGo.setOnClickListener {
-            val url = "https://leetcode.com/problems/reverse-bits"
+        binding.buttonGoSortList.setOnClickListener {
+            val url = "https://leetcode.com/problems/sort-list/"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
             startActivity(intent)
         }
 
-        binding.buttonPalindromeNumber.setOnClickListener {
-            val url = "https://leetcode.com/problems/palindrome-number"
+        binding.buttonRotateList.setOnClickListener {
+            val url = "https://leetcode.com/problems/rotate-list/"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
             startActivity(intent)
         }
 
-        binding.buttonValidPalindrome.setOnClickListener {
-            val url = "https://leetcode.com/problems/valid-palindrome"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
-        }
-
-        binding.buttonLongestPalindrome.setOnClickListener {
-            val url = "https://leetcode.com/problems/longest-palindrome"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
-        }
-
-        binding.buttonFizzBuzz.setOnClickListener {
-            val url = "https://leetcode.com/problems/fizz-buzz"
+        binding.buttonPartitionList.setOnClickListener {
+            val url = "https://leetcode.com/problems/partition-list/"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
             startActivity(intent)

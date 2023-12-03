@@ -35,13 +35,11 @@ class BeginnerFragment : Fragment() {
             val action = BeginnerFragmentDirections.actionBeginnerFragmentToBegStringsProblemFragment()
             findNavController().navigate(action)
         }
-
+        // Navigate to BegHashingProblemFragment
         binding.buttonOpenHashing?.setOnClickListener {
             val action = BeginnerFragmentDirections.actionBeginnerFragmentToBegHashingProblemFragment()
             findNavController().navigate(action)
         }
-
-        // Other buttons and actions can be defined similarly
 
         // Back button action
         binding.buttonBack.setOnClickListener {
