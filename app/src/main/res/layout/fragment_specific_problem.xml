@@ -3,96 +3,121 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <!-- Two Sum Problem -->
     <TextView
-        android:id="@+id/textViewProblemTitle"
+        android:id="@+id/Strings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strings"
+        android:layout_marginStart="175dp"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+    <!-- Reverse Bits -->
+    <TextView
+        android:id="@+id/textViewReverseBits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Two Sum"
+        android:paddingTop="20dp"
+        android:paddingRight="220dp"
+        android:paddingBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintTop_toBottomOf="@id/Strings"
+        app:layout_constraintVertical_bias="0.05" />
 
     <Button
         android:id="@+id/buttonGo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go"
-        app:layout_constraintStart_toEndOf="@id/textViewProblemTitle"
-        app:layout_constraintTop_toTopOf="@id/textViewProblemTitle" />
+        app:layout_constraintStart_toEndOf="@id/textViewReverseBits"
+        app:layout_constraintTop_toTopOf="@id/textViewReverseBits" />
 
-    <!-- Distribute Candies Problem -->
+    <!-- Palindrome Number -->
     <TextView
-        android:id="@+id/textViewDistributeCandies"
+        android:id="@+id/textViewPalindromeNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Distribute Candies"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonGo"
-        app:layout_constraintVertical_bias="0.1" />
+        android:paddingTop="20dp"
+        android:paddingRight="173dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewReverseBits"
+        app:layout_constraintVertical_bias="0.05" />
 
     <Button
         android:id="@+id/buttonDistributeCandies"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go"
-        app:layout_constraintStart_toEndOf="@id/textViewDistributeCandies"
-        app:layout_constraintTop_toTopOf="@id/textViewDistributeCandies" />
+        app:layout_constraintStart_toEndOf="@id/textViewPalindromeNumber"
+        app:layout_constraintTop_toTopOf="@id/textViewPalindromeNumber" />
 
-    <!-- Single Number Problem -->
+    <!-- Valid Palindrome -->
     <TextView
-        android:id="@+id/textViewSingleNumber"
+        android:id="@+id/textViewValidPalindrome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Single Number"
+        android:paddingTop="20dp"
+        android:paddingRight="185dp"
+        android:paddingBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonDistributeCandies"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintTop_toBottomOf="@id/textViewPalindromeNumber"
+        app:layout_constraintVertical_bias="0.05" />
 
+    <!-- Longest Palindrome -->
     <Button
         android:id="@+id/buttonSingleNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:text="Go"
-        app:layout_constraintStart_toEndOf="@id/textViewSingleNumber"
-        app:layout_constraintTop_toTopOf="@id/textViewSingleNumber" />
+        app:layout_constraintStart_toEndOf="@id/textViewValidPalindrome"
+        app:layout_constraintTop_toTopOf="@id/textViewValidPalindrome" />
 
-    <!-- Majority Element Problem -->
     <TextView
-        android:id="@+id/textViewMajorityElement"
+        android:id="@+id/textViewLongestPalindrome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Majority Element"
+        android:paddingTop="20dp"
+        android:paddingRight="173dp"
+        android:paddingBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonSingleNumber"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintTop_toBottomOf="@id/textViewValidPalindrome"
+        app:layout_constraintVertical_bias="0.05" />
 
     <Button
         android:id="@+id/buttonMajorityElement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go"
-        app:layout_constraintStart_toEndOf="@id/textViewMajorityElement"
-        app:layout_constraintTop_toTopOf="@id/textViewMajorityElement" />
+        app:layout_constraintStart_toEndOf="@id/textViewLongestPalindrome"
+        app:layout_constraintTop_toTopOf="@id/textViewLongestPalindrome" />
 
-    <!-- Missing Number Problem -->
+    <!-- Fizz Buzz -->
     <TextView
-        android:id="@+id/textViewMissingNumber"
+        android:id="@+id/textViewFizzBuzz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Missing Number"
+        android:paddingTop="20dp"
+        android:paddingRight="242dp"
+        android:paddingBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonMajorityElement"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintTop_toBottomOf="@id/textViewLongestPalindrome"
+        app:layout_constraintVertical_bias="0.05" />
 
     <Button
         android:id="@+id/buttonMissingNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go"
-        app:layout_constraintStart_toEndOf="@id/textViewMissingNumber"
-        app:layout_constraintTop_toTopOf="@id/textViewMissingNumber" />
+        app:layout_constraintStart_toEndOf="@id/textViewFizzBuzz"
+        app:layout_constraintTop_toTopOf="@id/textViewFizzBuzz" />
 
     <!-- Back Button -->
     <Button
@@ -100,6 +125,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="300dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonMissingNumber"
         app:layout_constraintVertical_bias="0.1" />
