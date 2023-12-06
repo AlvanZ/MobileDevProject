@@ -7,14 +7,16 @@
     >
 
     <!-- Title -->
+    <!-- Hashing Section -->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Intermediate Problem Types"
-        android:textAppearance="?attr/textAppearanceHeadline6"
         android:layout_gravity="center"
-        android:layout_marginBottom="8dp"/>
-    <!-- Hashing Section -->
+        android:layout_marginBottom="8dp"
+        android:text="Intermediate Problem Types"
+        android:textAppearance="?attr/textAppearanceHeadline6" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -3,28 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <!-- Sort List -->
+
+    <TextView
+        android:id="@+id/Title5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="28dp"
+        android:text="Coding Practice"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textColor="#FF5100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/LinkedListText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="68dp"
         android:text="LinkedList"
-        android:layout_marginStart="175dp"
         android:textAppearance="?attr/textAppearanceHeadline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
-    <!-- Sort List -->
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textViewSortList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sort List"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
         android:paddingTop="20dp"
         android:paddingRight="260dp"
         android:paddingBottom="20dp"
+        android:text="Sort List"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/LinkedListText"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/LinkedListText" />
 
     <Button
         android:id="@+id/buttonGoSortList"
@@ -35,17 +51,18 @@
         app:layout_constraintTop_toTopOf="@id/textViewSortList" />
 
     <!-- Rotate List -->
+
     <TextView
         android:id="@+id/textViewRotateList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rotate List"
+        android:layout_marginTop="60dp"
         android:paddingTop="20dp"
         android:paddingRight="247dp"
         android:paddingBottom="20dp"
+        android:text="Rotate List"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonGoSortList"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/buttonGoSortList" />
 
     <Button
         android:id="@+id/buttonRotateList"
@@ -56,17 +73,18 @@
         app:layout_constraintTop_toTopOf="@id/textViewRotateList" />
 
     <!-- Partition List -->
+
     <TextView
         android:id="@+id/textViewPartitionList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Partition List"
+        android:layout_marginTop="52dp"
         android:paddingTop="20dp"
         android:paddingRight="237dp"
         android:paddingBottom="20dp"
+        android:text="Partition List"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonRotateList"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/buttonRotateList" />
 
     <Button
         android:id="@+id/buttonPartitionList"
@@ -81,11 +99,10 @@
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="140dp"
         android:text="Back"
-        android:layout_marginLeft="175dp"
-        android:layout_marginTop="320dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonPartitionList"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintTop_toBottomOf="@id/buttonPartitionList" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,28 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <!-- Group Anagrams -->
+
+    <TextView
+        android:id="@+id/Title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="16dp"
+        android:text="Coding Practice"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textColor="#FF5100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/HashingText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="64dp"
         android:text="Hashing"
-        android:layout_marginStart="175dp"
         android:textAppearance="?attr/textAppearanceHeadline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
-    <!-- Group Anagrams -->
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textViewGroupAnagrams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Group Anagrams"
+        android:layout_marginTop="48dp"
         android:paddingTop="20dp"
         android:paddingRight="200dp"
         android:paddingBottom="20dp"
+        android:text="Group Anagrams"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/HashingText"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/HashingText" />
 
     <Button
         android:id="@+id/buttonGoGroupAnagrams"
@@ -35,17 +50,18 @@
         app:layout_constraintTop_toTopOf="@id/textViewGroupAnagrams" />
 
     <!-- Valid Sudoku -->
+
     <TextView
         android:id="@+id/textViewValidSudoku"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valid Sudoku"
+        android:layout_marginTop="64dp"
         android:paddingTop="20dp"
         android:paddingRight="224.5dp"
         android:paddingBottom="20dp"
+        android:text="Valid Sudoku"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewGroupAnagrams"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/textViewGroupAnagrams" />
 
     <Button
         android:id="@+id/buttonValidSudoku"
@@ -56,17 +72,19 @@
         app:layout_constraintTop_toTopOf="@id/textViewValidSudoku" />
 
     <!-- Sort Colors -->
+
     <TextView
         android:id="@+id/textViewSortColors"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sort Colors"
+        android:layout_width="301dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="76dp"
         android:paddingTop="20dp"
         android:paddingRight="237dp"
         android:paddingBottom="20dp"
+        android:text="Sort Colors"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonValidSudoku"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/buttonValidSudoku" />
 
     <Button
         android:id="@+id/buttonSortColors"
@@ -81,11 +99,10 @@
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="188dp"
         android:text="Back"
-        android:layout_marginTop="360dp"
-        android:layout_marginLeft="175dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonSortColors"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintTop_toBottomOf="@id/buttonSortColors" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

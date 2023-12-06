@@ -3,28 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <!-- Group Anagrams -->
+
+    <TextView
+        android:id="@+id/Title7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="16dp"
+        android:text="Coding Practice"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textColor="#FF5100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/StacksText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="60dp"
         android:text="Stacks"
-        android:layout_marginStart="175dp"
         android:textAppearance="?attr/textAppearanceHeadline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
-    <!-- Group Anagrams -->
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textViewGroupAnagrams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Min Stack"
+        android:layout_marginTop="40dp"
         android:paddingTop="20dp"
         android:paddingRight="240dp"
         android:paddingBottom="20dp"
+        android:text="Min Stack"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/StacksText"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/StacksText" />
 
     <Button
         android:id="@+id/buttonGo"
@@ -35,17 +50,18 @@
         app:layout_constraintTop_toTopOf="@id/textViewGroupAnagrams" />
 
     <!-- Valid Sudoku -->
+
     <TextView
         android:id="@+id/textViewValidSudoku"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Online Stock Span"
+        android:layout_marginTop="68dp"
         android:paddingTop="20dp"
         android:paddingRight="190dp"
         android:paddingBottom="20dp"
+        android:text="Online Stock Span"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonGo"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/buttonGo" />
 
     <Button
         android:id="@+id/buttonOnlineStockSpan"
@@ -56,17 +72,18 @@
         app:layout_constraintTop_toTopOf="@id/textViewValidSudoku" />
 
     <!-- Sort Colors -->
+
     <TextView
         android:id="@+id/textViewSortColors"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Decode String"
+        android:layout_marginTop="68dp"
         android:paddingTop="20dp"
         android:paddingRight="215dp"
         android:paddingBottom="20dp"
+        android:text="Decode String"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonOnlineStockSpan"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/buttonOnlineStockSpan" />
 
     <Button
         android:id="@+id/buttonDecodeString"
@@ -81,11 +98,10 @@
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="92dp"
         android:text="Back"
-        android:layout_marginTop="360dp"
-        android:layout_marginLeft="175dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonDecodeString"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintTop_toBottomOf="@id/buttonDecodeString" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

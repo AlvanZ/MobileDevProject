@@ -3,28 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <!-- Group Anagrams -->
+
+    <TextView
+        android:id="@+id/Title6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="32dp"
+        android:text="Coding Practice"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textColor="#FF5100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/QueueText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="68dp"
         android:text="Queue"
-        android:layout_marginStart="175dp"
         android:textAppearance="?attr/textAppearanceHeadline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
-    <!-- Group Anagrams -->
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textViewGroupAnagrams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:paddingTop="20dp"
         android:paddingRight="150dp"
         android:paddingBottom="20dp"
         android:text="Flatten Nested List Iterator"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/QueueText"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/QueueText" />
 
     <Button
         android:id="@+id/buttonGo"
@@ -35,17 +50,18 @@
         app:layout_constraintTop_toTopOf="@id/textViewGroupAnagrams" />
 
     <!-- Valid Sudoku -->
+
     <TextView
         android:id="@+id/textViewValidSudoku"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Design Front Middle Back Queue"
+        android:layout_marginTop="68dp"
         android:paddingTop="20dp"
         android:paddingRight="115dp"
         android:paddingBottom="20dp"
+        android:text="Design Front Middle Back Queue"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonGo"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/buttonGo" />
 
     <Button
         android:id="@+id/buttonFrontMiddleBackQueue"
@@ -56,17 +72,18 @@
         app:layout_constraintTop_toTopOf="@id/textViewValidSudoku" />
 
     <!-- Sort Colors -->
+
     <TextView
         android:id="@+id/textViewSortColors"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Maximum Sum Circular Sub Array"
+        android:layout_marginTop="72dp"
         android:paddingTop="20dp"
         android:paddingRight="108dp"
         android:paddingBottom="20dp"
+        android:text="Maximum Sum Circular Sub Array"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonFrontMiddleBackQueue"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/buttonFrontMiddleBackQueue" />
 
     <Button
         android:id="@+id/buttonMaximumSumCircularSubArray"
@@ -81,11 +98,10 @@
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="160dp"
         android:text="Back"
-        android:layout_marginTop="360dp"
-        android:layout_marginLeft="175dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonMaximumSumCircularSubArray"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintTop_toBottomOf="@id/buttonMaximumSumCircularSubArray" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

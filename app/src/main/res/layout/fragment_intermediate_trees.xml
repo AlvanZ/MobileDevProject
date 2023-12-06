@@ -3,28 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <!-- Insert Into A Binary Search Tree -->
+
+    <TextView
+        android:id="@+id/Title8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="28dp"
+        android:text="Coding Practice"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textColor="#FF5100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/TreesText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="56dp"
         android:text="Trees"
-        android:layout_marginStart="175dp"
         android:textAppearance="?attr/textAppearanceHeadline6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
-    <!-- Insert Into A Binary Search Tree -->
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textViewGroupAnagrams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Insert Into A Binary Search Tree"
+        android:layout_marginTop="44dp"
         android:paddingTop="20dp"
         android:paddingRight="100dp"
         android:paddingBottom="20dp"
+        android:text="Insert Into A Binary Search Tree"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/TreesText"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/TreesText" />
 
     <Button
         android:id="@+id/buttonGo"
@@ -35,17 +50,18 @@
         app:layout_constraintTop_toTopOf="@id/textViewGroupAnagrams" />
 
     <!-- Binary Tree Right Side View -->
+
     <TextView
         android:id="@+id/textViewValidSudoku"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Binary Tree Right Side View"
+        android:layout_marginTop="60dp"
         android:paddingTop="20dp"
         android:paddingRight="127dp"
         android:paddingBottom="20dp"
+        android:text="Binary Tree Right Side View"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonGo"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/buttonGo" />
 
     <Button
         android:id="@+id/buttonBinaryTreeRightSideView"
@@ -56,17 +72,18 @@
         app:layout_constraintTop_toTopOf="@id/textViewValidSudoku" />
 
     <!-- Trim A Binary Search Tree -->
+
     <TextView
         android:id="@+id/textViewSortColors"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trim A Binary Search Tree"
+        android:layout_marginTop="68dp"
         android:paddingTop="20dp"
         android:paddingRight="137dp"
         android:paddingBottom="20dp"
+        android:text="Trim A Binary Search Tree"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonBinaryTreeRightSideView"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@id/buttonBinaryTreeRightSideView" />
 
     <Button
         android:id="@+id/buttonTrimABinarySearchTree"
@@ -81,11 +98,10 @@
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="168dp"
         android:text="Back"
-        android:layout_marginTop="360dp"
-        android:layout_marginLeft="175dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonTrimABinarySearchTree"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintTop_toBottomOf="@id/buttonTrimABinarySearchTree" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

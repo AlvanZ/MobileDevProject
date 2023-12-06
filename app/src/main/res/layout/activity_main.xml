@@ -22,41 +22,51 @@
     <!-- This LinearLayout contains your buttons and text -->
     <LinearLayout
         android:id="@+id/main_menu_layout"
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="399dp"
+        android:layout_height="721dp"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="Coding Practice"
+            android:textAppearance="?attr/textAppearanceHeadline3"
+            android:textColor="#FF5100"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:text="Problem Types"
-            android:textAppearance="?attr/textAppearanceHeadline5"
-            android:layout_marginBottom="20dp"/>
+            android:textAppearance="?attr/textAppearanceHeadline5" />
 
         <Button
             android:id="@+id/button_beginner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Beginner"
-            android:layout_marginBottom="8dp"/>
+            android:layout_width="182dp"
+            android:layout_height="62dp"
+            android:layout_marginBottom="8dp"
+            android:text="Beginner" />
 
         <Button
             android:id="@+id/button_intermediate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Intermediate"/>
+            android:layout_width="181dp"
+            android:layout_height="62dp"
+            android:text="Intermediate" />
 
         <Button
             android:id="@+id/button_tutorials"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tutorials"
-            android:layout_marginTop="8dp"/>
+            android:layout_width="181dp"
+            android:layout_height="62dp"
+            android:text="Tutorials" />
 
     </LinearLayout>
 
