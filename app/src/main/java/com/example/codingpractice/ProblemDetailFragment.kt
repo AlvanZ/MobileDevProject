@@ -8,14 +8,12 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.ContactsContract
 import android.text.format.DateFormat
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.setFragmentResultListener
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -26,7 +24,7 @@ import androidx.navigation.fragment.navArgs
 import com.example.codingpractice.databinding.FragmentProblemDetailBinding
 import kotlinx.coroutines.launch
 import java.util.Date
-import java.util.UUID
+
 private const val TAG = "ProblemDetailFragment"
 private const val DATE_FORMAT = "EEE, MMM, dd"
 class ProblemDetailFragment: Fragment() {
@@ -36,10 +34,9 @@ class ProblemDetailFragment: Fragment() {
         get() = checkNotNull(_binding){
             "Cannot access binding because it is null. Is this view visible?"
         }
-
     private val args: ProblemDetailFragmentArgs by navArgs()
     private val problemDetailViewModel: ProblemDetailViewModel by viewModels{
-        ProblemDetailViewModelFactory(args.problemId)
+        ProblemDetailViewModelFactory(args.problemId, args.title, args.url)
     }
     private val selectSendTo = registerForActivityResult(
         ActivityResultContracts.PickContact()
@@ -61,20 +58,11 @@ class ProblemDetailFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply{
-            problemTitle.doOnTextChanged { text, _, _,_ ->
-                problemDetailViewModel.updateProblem { oldProblem->
-                    oldProblem.copy(title= text.toString())
-                }
-            }
-            problemSolved.setOnCheckedChangeListener(){_, isChecked->
-                problemDetailViewModel.updateProblem { oldProblem->
-                    oldProblem.copy(isSolved = isChecked)
-                }
-            }
+            problemTitle.setText(args.title)
             problemSendTo.setOnClickListener {
                 selectSendTo.launch(null)
             }
-            problemUrl.text = "Test"
+            problemUrl.text = args.title
             val selectSendToIntent = selectSendTo.contract.createIntent(requireContext(),null)
             problemSendTo.isEnabled = canResolveIntent(selectSendToIntent)
         }
@@ -99,10 +87,8 @@ class ProblemDetailFragment: Fragment() {
     }
     private fun updateUi(problem: Problem){
         binding.apply{
-            if(problemTitle.text.toString() != problem.title){
-                problemTitle.setText(problem.title)
-            }
-            problemDate.text = problem.date.toString()
+            problemTitle.setText(args.title)
+            problemDate.text = Date().toString()
             problemDate.setOnClickListener{
                 findNavController().navigate(
                     ProblemDetailFragmentDirections.selectDate(problem.date)

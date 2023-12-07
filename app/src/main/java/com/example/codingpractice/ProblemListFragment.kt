@@ -53,7 +53,7 @@ class ProblemListFragment : Fragment() {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED){
                 problemListViewModel.problems.collect{ problems ->
                     binding.problemRecyclerView.adapter = ProblemListAdapter(problems){problemId->
-                        findNavController().navigate(ProblemListFragmentDirections.showProblemDetail(problemId))
+                        //findNavController().navigate(ProblemListFragmentDirections.showProblemDetail(problemId))
                     }
                 }
             }
@@ -90,7 +90,7 @@ class ProblemListFragment : Fragment() {
                 isSolved = false
             )
             problemListViewModel.addProblem(newProblem)
-            findNavController().navigate(ProblemListFragmentDirections.showProblemDetail(newProblem.id))
+            //findNavController().navigate(ProblemListFragmentDirections.showProblemDetail(newProblem.id))
         }
     }
 }

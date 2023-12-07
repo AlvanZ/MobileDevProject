@@ -12,7 +12,7 @@
     <string name = "problem_report_solved">The problem is solved </string>
     <string name="problem_report_unsolved">The problem is not solved </string>
     <string name ="problem_report_no_sendTo">There is no person to sendTo</string>
-    <string name="problem_report_sendTo">The person to sendTO is %s.</string>
+    <string name="problem_report_sendTo">The person to send TO is %s.</string>
     <string name ="problem_report_subject">CodingPractice Problem Report</string>
     <string name="send_report">Send problem via</string>
 </resources>

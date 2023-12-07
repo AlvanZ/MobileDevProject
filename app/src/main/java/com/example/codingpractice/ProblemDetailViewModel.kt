@@ -33,7 +33,9 @@ class ProblemDetailViewModel(problemId: UUID): ViewModel() {
 }
 
 class ProblemDetailViewModelFactory(
-    private val problemId: UUID
+    private val problemId: UUID,
+    title: String,
+    url: String
 ):  ViewModelProvider.Factory{
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return ProblemDetailViewModel(problemId) as T
