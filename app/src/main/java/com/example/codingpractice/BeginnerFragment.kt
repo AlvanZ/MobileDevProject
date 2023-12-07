@@ -40,6 +40,10 @@ class BeginnerFragment : Fragment() {
             val action = BeginnerFragmentDirections.actionBeginnerFragmentToBegHashingProblemFragment()
             findNavController().navigate(action)
         }
+        binding.buttonOpenTutorials?.setOnClickListener {
+            val action = BeginnerFragmentDirections.actionBeginnerFragmentToBegTutorialFragment()
+            findNavController().navigate(action)
+        }
 
         // Back button action
         binding.buttonBack.setOnClickListener {

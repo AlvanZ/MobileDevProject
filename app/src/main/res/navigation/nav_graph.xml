@@ -62,6 +62,9 @@
         <action
             android:id="@+id/action_beginnerFragment_to_begHashingProblemFragment"
             app:destination="@id/begHashingProblemFragment" />
+        <action
+            android:id="@+id/action_beginnerFragment_to_begTutorialFragment"
+            app:destination="@id/begTutorialFragment" />
     </fragment>
 
     <!-- Define the intermediateFragment -->
@@ -166,5 +169,9 @@
         android:name="com.example.codingpractice.IntTreesProblemFragment"
         android:label="IntTreesProblemFragment"
         tools:layout="@layout/fragment_intermediate_trees" />
+    <fragment
+        android:id="@+id/begTutorialFragment"
+        android:name="com.example.codingpractice.BegTutorialFragment"
+        android:label="BegTutorialFragment" />
 
 </navigation>

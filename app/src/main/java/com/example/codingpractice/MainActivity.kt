@@ -10,8 +10,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var navController: NavController
+    lateinit var navController: NavController
     private lateinit var mainMenuLayout: View
 
     override fun onCreate(savedInstanceState: Bundle?) {

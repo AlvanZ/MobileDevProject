@@ -66,7 +66,7 @@
             android:id="@+id/button_tutorials"
             android:layout_width="181dp"
             android:layout_height="62dp"
-            android:text="Tutorials" />
+            android:text="Solution Tutorials" />
 
     </LinearLayout>
 

@@ -8,11 +8,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Beginner Problem Types"
+        android:text="Beginner Tutorials"
         android:textAppearance="?attr/textAppearanceHeadline6"
         android:layout_gravity="center"
         android:layout_marginBottom="8dp"/>
-    <!-- Arrays Section -->
+    <!-- CS Dojo -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,82 +21,38 @@
         android:gravity="center_vertical">
 
         <TextView
-            android:id="@+id/text_problem_name"
+            android:id="@+id/text_CS_Dojo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Arrays"
+            android:text="CS Dojo"
             android:textAppearance="?attr/textAppearanceBody1"/>
 
         <Button
-            android:id="@+id/button_open_problem"
+            android:id="@+id/button_open_cs_dojo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Open"/>
     </LinearLayout>
 
-    <!-- Strings Section -->
+    <!-- Hacker rank -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="100dp"
+        android:gravity="center_vertical">
 
         <TextView
-            android:id="@+id/text_problem_name_strings"
+            android:id="@+id/text_hacker_rank"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Strings"
+            android:text="Hacker Rank"
             android:textAppearance="?attr/textAppearanceBody1"/>
 
         <Button
-            android:id="@+id/button_open_strings"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Open"/>
-    </LinearLayout>
-
-    <!-- Hashing Section -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:id="@+id/text_problem_name_hashing"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Hashing"
-            android:textAppearance="?attr/textAppearanceBody1"/>
-
-        <Button
-            android:id="@+id/button_open_hashing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Open"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:id="@+id/text_tutorials"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Tutorials"
-            android:textAppearance="?attr/textAppearanceBody1"/>
-
-        <Button
-            android:id="@+id/button_open_tutorials"
+            android:id="@+id/button_open_hacker_rank"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Open"/>
