@@ -13,6 +13,7 @@
         android:layout_marginStart="132dp"
         android:layout_marginTop="28dp"
         android:text="Coding Practice"
+        android:textStyle="bold"
         android:textAppearance="?attr/textAppearanceHeadline5"
         android:textColor="#FF5100"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,6 +40,7 @@
         android:paddingRight="260dp"
         android:paddingBottom="20dp"
         android:text="Sort List"
+        android:textAppearance="?attr/textAppearanceBody1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/LinkedListText" />
 
@@ -61,6 +63,7 @@
         android:paddingRight="247dp"
         android:paddingBottom="20dp"
         android:text="Rotate List"
+        android:textAppearance="?attr/textAppearanceBody1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonGoSortList" />
 
@@ -83,6 +86,7 @@
         android:paddingRight="237dp"
         android:paddingBottom="20dp"
         android:text="Partition List"
+        android:textAppearance="?attr/textAppearanceBody1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonRotateList" />
 
@@ -102,6 +106,7 @@
         android:layout_marginStart="180dp"
         android:layout_marginTop="140dp"
         android:text="Back"
+        android:drawableLeft="@drawable/baseline_arrow_left_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonPartitionList" />
 

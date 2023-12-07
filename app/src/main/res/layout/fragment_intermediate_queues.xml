@@ -13,7 +13,8 @@
         android:layout_marginStart="144dp"
         android:layout_marginTop="32dp"
         android:text="Coding Practice"
-        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textStyle="bold"
+        android:textAppearance="?attr/textAppearanceHeadline5"
         android:textColor="#FF5100"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,13 +32,14 @@
 
     <TextView
         android:id="@+id/textViewGroupAnagrams"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="316dp"
+        android:layout_height="85dp"
         android:layout_marginTop="36dp"
         android:paddingTop="20dp"
         android:paddingRight="150dp"
         android:paddingBottom="20dp"
         android:text="Flatten Nested List Iterator"
+        android:textAppearance="?attr/textAppearanceBody1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/QueueText" />
 
@@ -53,13 +55,14 @@
 
     <TextView
         android:id="@+id/textViewValidSudoku"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="316dp"
+        android:layout_height="91dp"
         android:layout_marginTop="68dp"
         android:paddingTop="20dp"
         android:paddingRight="115dp"
         android:paddingBottom="20dp"
         android:text="Design Front Middle Back Queue"
+        android:textAppearance="?attr/textAppearanceBody1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonGo" />
 
@@ -75,13 +78,14 @@
 
     <TextView
         android:id="@+id/textViewSortColors"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="316dp"
+        android:layout_height="88dp"
         android:layout_marginTop="72dp"
         android:paddingTop="20dp"
         android:paddingRight="108dp"
         android:paddingBottom="20dp"
         android:text="Maximum Sum Circular Sub Array"
+        android:textAppearance="?attr/textAppearanceBody1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonFrontMiddleBackQueue" />
 
@@ -101,6 +105,7 @@
         android:layout_marginStart="172dp"
         android:layout_marginTop="160dp"
         android:text="Back"
+        android:drawableLeft="@drawable/baseline_arrow_left_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonMaximumSumCircularSubArray" />
 

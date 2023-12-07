@@ -13,6 +13,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="16dp"
         android:text="Coding Practice"
+        android:textStyle="bold"
         android:textAppearance="?attr/textAppearanceHeadline5"
         android:textColor="#FF5100"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,6 +40,7 @@
         android:paddingRight="220dp"
         android:paddingBottom="20dp"
         android:text="Two Sum"
+        android:textAppearance="?attr/textAppearanceBody1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Strings" />
 
@@ -54,14 +56,15 @@
 
     <TextView
         android:id="@+id/textViewPalindromeNumber"
-        android:layout_width="301dp"
-        android:layout_height="68dp"
+        android:layout_width="305dp"
+        android:layout_height="78dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="4dp"
         android:paddingTop="20dp"
         android:paddingRight="173dp"
         android:paddingBottom="20dp"
         android:text="Distribute Candies"
+        android:textAppearance="?attr/textAppearanceBody1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewReverseBits" />
 
@@ -79,14 +82,15 @@
 
     <TextView
         android:id="@+id/textViewValidPalindrome"
-        android:layout_width="292dp"
-        android:layout_height="69dp"
+        android:layout_width="295dp"
+        android:layout_height="77dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="4dp"
         android:paddingTop="20dp"
         android:paddingRight="185dp"
         android:paddingBottom="20dp"
         android:text="Single Number"
+        android:textAppearance="?attr/textAppearanceBody1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewPalindromeNumber" />
 
@@ -101,14 +105,15 @@
 
     <TextView
         android:id="@+id/textViewLongestPalindrome"
-        android:layout_width="305dp"
-        android:layout_height="68dp"
+        android:layout_width="308dp"
+        android:layout_height="63dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
         android:paddingTop="20dp"
         android:paddingRight="173dp"
         android:paddingBottom="20dp"
         android:text="Majority Element"
+        android:textAppearance="?attr/textAppearanceBody1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewValidPalindrome" />
 
@@ -124,14 +129,15 @@
 
     <TextView
         android:id="@+id/textViewFizzBuzz"
-        android:layout_width="301dp"
-        android:layout_height="83dp"
+        android:layout_width="310dp"
+        android:layout_height="81dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
         android:paddingTop="20dp"
         android:paddingRight="242dp"
         android:paddingBottom="20dp"
         android:text="Missing Number"
+        android:textAppearance="?attr/textAppearanceBody1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewLongestPalindrome" />
 
@@ -146,10 +152,11 @@
     <!-- Back Button -->
     <Button
         android:id="@+id/buttonBack"
-        android:layout_width="103dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="172dp"
+        android:layout_width="115dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="156dp"
         android:layout_marginTop="76dp"
+        android:drawableLeft="@drawable/baseline_arrow_left_24"
         android:text="Back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonMissingNumber" />
