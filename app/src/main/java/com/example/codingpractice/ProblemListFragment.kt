@@ -66,18 +66,18 @@ class ProblemListFragment : Fragment() {
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.fragment_problem_list, menu)
+//        inflater.inflate(R.menu.fragment_problem_list, menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId){
-            R.id.new_problem->{
-                showNewProblem()
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        return when (item.itemId){
+//            R.id.new_problem->{
+//                showNewProblem()
+//                true
+//            }
+//            else -> super.onOptionsItemSelected(item)
+//        }
+//    }
     private fun showNewProblem(){
         viewLifecycleOwner.lifecycleScope.launch{
             val newProblem = Problem(
