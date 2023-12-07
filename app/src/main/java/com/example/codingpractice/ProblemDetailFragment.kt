@@ -62,7 +62,12 @@ class ProblemDetailFragment: Fragment() {
             problemSendTo.setOnClickListener {
                 selectSendTo.launch(null)
             }
-            problemUrl.text = args.title
+            problemUrl.setOnClickListener{
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(args.url)
+            startActivity(intent)
+            }
+            problemUrl.text = args.url
             val selectSendToIntent = selectSendTo.contract.createIntent(requireContext(),null)
             problemSendTo.isEnabled = canResolveIntent(selectSendToIntent)
         }

@@ -29,10 +29,6 @@ class BegArraysProblemFragment : Fragment() {
 
         // Set up the "Go" button click listener
         binding.buttonGo.setOnClickListener {
-//            val url = "https://leetcode.com/problems/two-sum/"
-//            val intent = Intent(Intent.ACTION_VIEW)
-//            intent.data = Uri.parse(url)
-//            startActivity(intent)
             val action = BegArraysProblemFragmentDirections.actionBegArraysProblemFragmentToProblemDetailFragment2(
                 UUID.randomUUID(), "Two Sum", "https://leetcode.com/problems/two-sum/")
             findNavController().navigate(action)
@@ -43,6 +39,7 @@ class BegArraysProblemFragment : Fragment() {
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
             startActivity(intent)
+
         }
 
         binding.buttonSingleNumber.setOnClickListener {
