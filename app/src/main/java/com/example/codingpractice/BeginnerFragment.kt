@@ -26,6 +26,7 @@ class BeginnerFragment : Fragment() {
 
         // Navigate to BegArraysProblemFragment
         binding.buttonOpenProblem.setOnClickListener {
+
             val action = BeginnerFragmentDirections.actionBeginnerFragmentToBegArraysProblemFragment()
             findNavController().navigate(action)
         }

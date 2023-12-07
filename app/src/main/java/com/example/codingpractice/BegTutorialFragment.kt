@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.codingpractice.databinding.FragmentSpecificProblemBinding
 import androidx.navigation.fragment.findNavController
 import android.content.Intent
 import android.net.Uri

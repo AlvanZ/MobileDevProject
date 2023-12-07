@@ -112,7 +112,11 @@
         android:id="@+id/begArraysProblemFragment"
         android:name="com.example.codingpractice.BegArraysProblemFragment"
         android:label="BegArraysProblemFragment"
-        tools:layout="@layout/fragment_specific_problem" />
+        tools:layout="@layout/fragment_beginner_arrays" >
+        <action
+            android:id="@+id/action_begArraysProblemFragment_to_problemDetailFragment2"
+            app:destination="@id/problemDetailFragment" />
+    </fragment>
 
     <!-- Define BegStringsProblemFragment -->
     <fragment
