@@ -12,22 +12,25 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_graph"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph"
         tools:context=".MainActivity" />
 
     <!-- This LinearLayout contains your buttons and text -->
+
     <LinearLayout
         android:id="@+id/main_menu_layout"
-        android:layout_width="399dp"
-        android:layout_height="721dp"
+        android:layout_width="392dp"
+        android:layout_height="660dp"
+        android:layout_marginTop="52dp"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -40,7 +43,7 @@
             android:text="Coding Practice"
             android:textAppearance="?attr/textAppearanceHeadline3"
             android:textColor="#FF5100"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -69,5 +72,17 @@
             android:text="Solution Tutorials" />
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="328dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="514dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_menu_layout"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_container"
+        app:layout_constraintStart_toStartOf="@+id/fragment_container"
+        app:srcCompat="@drawable/icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
