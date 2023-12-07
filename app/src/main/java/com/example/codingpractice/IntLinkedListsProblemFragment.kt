@@ -9,6 +9,7 @@ import com.example.codingpractice.databinding.FragmentIntermediateLinkedlistsBin
 import androidx.navigation.fragment.findNavController
 import android.content.Intent
 import android.net.Uri
+import java.util.UUID
 
 class IntLinkedListsProblemFragment : Fragment() {
     private var _binding: FragmentIntermediateLinkedlistsBinding? = null
@@ -27,23 +28,23 @@ class IntLinkedListsProblemFragment : Fragment() {
 
         binding.buttonGoSortList.setOnClickListener {
             val url = "https://leetcode.com/problems/sort-list/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntLinkedListsProblemFragmentDirections.actionIntLinkedListsProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Sort List", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonRotateList.setOnClickListener {
             val url = "https://leetcode.com/problems/rotate-list/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntLinkedListsProblemFragmentDirections.actionIntLinkedListsProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Rotate List", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonPartitionList.setOnClickListener {
             val url = "https://leetcode.com/problems/partition-list/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntLinkedListsProblemFragmentDirections.actionIntLinkedListsProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Partition List", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonBack.setOnClickListener {

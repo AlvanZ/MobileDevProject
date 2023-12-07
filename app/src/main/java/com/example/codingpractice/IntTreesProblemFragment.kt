@@ -9,6 +9,7 @@ import com.example.codingpractice.databinding.FragmentIntermediateTreesBinding
 import androidx.navigation.fragment.findNavController
 import android.content.Intent
 import android.net.Uri
+import java.util.UUID
 
 class IntTreesProblemFragment : Fragment() {
     private var _binding: FragmentIntermediateTreesBinding? = null
@@ -27,23 +28,23 @@ class IntTreesProblemFragment : Fragment() {
 
         binding.buttonGo.setOnClickListener {
             val url = "https://leetcode.com/problems/insert-into-a-binary-search-tree/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntTreesProblemFragmentDirections.actionIntTreesProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Insert into a Binary Search Tree", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonBinaryTreeRightSideView.setOnClickListener {
             val url = "https://leetcode.com/problems/binary-tree-right-side-view/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntTreesProblemFragmentDirections.actionIntTreesProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Binary Tree Right Side View", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonTrimABinarySearchTree.setOnClickListener {
             val url = "https://leetcode.com/problems/trim-a-binary-search-tree/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntTreesProblemFragmentDirections.actionIntTreesProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Trim a Binary Search Tree", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonBack.setOnClickListener {

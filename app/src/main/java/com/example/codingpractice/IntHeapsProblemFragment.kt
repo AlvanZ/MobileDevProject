@@ -9,6 +9,7 @@ import com.example.codingpractice.databinding.FragmentIntermediateHeapsBinding
 import androidx.navigation.fragment.findNavController
 import android.content.Intent
 import android.net.Uri
+import java.util.UUID
 
 class IntHeapsProblemFragment : Fragment() {
     private var _binding: FragmentIntermediateHeapsBinding? = null
@@ -27,23 +28,23 @@ class IntHeapsProblemFragment : Fragment() {
 
         binding.buttonGoCarPooling.setOnClickListener {
             val url = "https://leetcode.com/problems/car-pooling/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntHeapsProblemFragmentDirections.actionIntHeapsProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Car Pooling", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonSortAnArray.setOnClickListener {
             val url = "https://leetcode.com/problems/sort-an-array"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntHeapsProblemFragmentDirections.actionIntHeapsProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Sort an Array", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonLongestHappyString.setOnClickListener {
             val url = "https://leetcode.com/problems/longest-happy-string/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntHeapsProblemFragmentDirections.actionIntHeapsProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Longest Happy String", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonBack.setOnClickListener {

@@ -9,6 +9,7 @@ import com.example.codingpractice.databinding.FragmentBeginnerHashingBinding
 import androidx.navigation.fragment.findNavController
 import android.content.Intent
 import android.net.Uri
+import java.util.UUID
 
 class BegHashingProblemFragment : Fragment() {
     private var _binding: FragmentBeginnerHashingBinding? = null
@@ -28,16 +29,16 @@ class BegHashingProblemFragment : Fragment() {
         // Set up the "Go" button click listener
         binding.buttonGo.setOnClickListener {
             val url = "https://leetcode.com/problems/design-hashmap/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = BegHashingProblemFragmentDirections.actionBegHashingProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Design Hashmap", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonDesignHashset.setOnClickListener {
             val url = "https://leetcode.com/problems/design-hashset/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = BegHashingProblemFragmentDirections.actionBegHashingProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Design Hashset", url)
+            findNavController().navigate(action)
         }
 
 

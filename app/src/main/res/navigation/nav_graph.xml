@@ -124,56 +124,88 @@
         android:id="@+id/begStringsProblemFragment"
         android:name="com.example.codingpractice.BegStringsProblemFragment"
         android:label="BegStringsProblemFragment"
-        tools:layout="@layout/fragment_beginner_strings" />
+        tools:layout="@layout/fragment_beginner_strings" >
+        <action
+            android:id="@+id/action_begStringsProblemFragment_to_problemDetailFragment"
+            app:destination="@id/problemDetailFragment" />
+    </fragment>
 
     <!-- Define BegHashingProblemFragment -->
     <fragment
         android:id="@+id/begHashingProblemFragment"
         android:name="com.example.codingpractice.BegHashingProblemFragment"
         android:label="BegHashingProblemFragment"
-        tools:layout="@layout/fragment_beginner_hashing" />
+        tools:layout="@layout/fragment_beginner_hashing" >
+        <action
+            android:id="@+id/action_begHashingProblemFragment_to_problemDetailFragment"
+            app:destination="@id/problemDetailFragment" />
+    </fragment>
 
     <!-- Define IntHashingProblemFragment -->
     <fragment
         android:id="@+id/intHashingProblemFragment"
         android:name="com.example.codingpractice.IntHashingProblemFragment"
         android:label="IntHashingProblemFragment"
-        tools:layout="@layout/fragment_intermediate_hashing" />
+        tools:layout="@layout/fragment_intermediate_hashing" >
+        <action
+            android:id="@+id/action_intHashingProblemFragment_to_problemDetailFragment"
+            app:destination="@id/problemDetailFragment" />
+    </fragment>
 
     <!-- Define IntHeapsProblemFragment -->
     <fragment
         android:id="@+id/intHeapsProblemFragment"
         android:name="com.example.codingpractice.IntHeapsProblemFragment"
         android:label="IntHeapsProblemFragment"
-        tools:layout="@layout/fragment_intermediate_heaps" />
+        tools:layout="@layout/fragment_intermediate_heaps" >
+        <action
+            android:id="@+id/action_intHeapsProblemFragment_to_problemDetailFragment"
+            app:destination="@id/problemDetailFragment" />
+    </fragment>
 
     <!-- Define IntLinkedListsProblemFragment -->
     <fragment
         android:id="@+id/intLinkedListsProblemFragment"
         android:name="com.example.codingpractice.IntLinkedListsProblemFragment"
         android:label="IntLinkedListsProblemFragment"
-        tools:layout="@layout/fragment_intermediate_linkedlists" />
+        tools:layout="@layout/fragment_intermediate_linkedlists" >
+        <action
+            android:id="@+id/action_intLinkedListsProblemFragment_to_problemDetailFragment"
+            app:destination="@id/problemDetailFragment" />
+    </fragment>
 
     <!-- Define IntQueuesProblemFragment -->
     <fragment
         android:id="@+id/intQueuesProblemFragment"
         android:name="com.example.codingpractice.IntQueuesProblemFragment"
         android:label="IntQueuesProblemFragment"
-        tools:layout="@layout/fragment_intermediate_queues" />
+        tools:layout="@layout/fragment_intermediate_queues" >
+        <action
+            android:id="@+id/action_intQueuesProblemFragment_to_problemDetailFragment"
+            app:destination="@id/problemDetailFragment" />
+    </fragment>
 
     <!-- Define IntStacksProblemFragment -->
     <fragment
         android:id="@+id/intStacksProblemFragment"
         android:name="com.example.codingpractice.IntStacksProblemFragment"
         android:label="IntStacksProblemFragment"
-        tools:layout="@layout/fragment_intermediate_stacks" />
+        tools:layout="@layout/fragment_intermediate_stacks" >
+        <action
+            android:id="@+id/action_intStacksProblemFragment_to_problemDetailFragment"
+            app:destination="@id/problemDetailFragment" />
+    </fragment>
 
     <!-- Define IntTreesProblemFragment -->
     <fragment
         android:id="@+id/intTreesProblemFragment"
         android:name="com.example.codingpractice.IntTreesProblemFragment"
         android:label="IntTreesProblemFragment"
-        tools:layout="@layout/fragment_intermediate_trees" />
+        tools:layout="@layout/fragment_intermediate_trees" >
+        <action
+            android:id="@+id/action_intTreesProblemFragment_to_problemDetailFragment"
+            app:destination="@id/problemDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/begTutorialFragment"
         android:name="com.example.codingpractice.BegTutorialFragment"

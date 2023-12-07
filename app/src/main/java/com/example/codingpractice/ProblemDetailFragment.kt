@@ -68,6 +68,7 @@ class ProblemDetailFragment: Fragment() {
             startActivity(intent)
             }
             problemUrl.text = args.url
+            problemSendTo.text = "Send To"
             val selectSendToIntent = selectSendTo.contract.createIntent(requireContext(),null)
             problemSendTo.isEnabled = canResolveIntent(selectSendToIntent)
         }
@@ -93,23 +94,6 @@ class ProblemDetailFragment: Fragment() {
     private fun updateUi(problem: Problem){
         binding.apply{
             problemTitle.setText(args.title)
-            problemDate.text = Date().toString()
-            problemDate.setOnClickListener{
-                findNavController().navigate(
-                    ProblemDetailFragmentDirections.selectDate(problem.date)
-                )
-            }
-            problemSolved.isChecked = problem.isSolved
-            problemShare.setOnClickListener{
-                val reportIntent = Intent(Intent.ACTION_SEND).apply{
-                    type = "text/plain"
-                    putExtra(Intent.EXTRA_TEXT,getProblemReport(problem))
-                    putExtra(Intent.EXTRA_SUBJECT, getString(R.string.problem_report_sendTo))
-                }
-                val chooserIntent = Intent.createChooser(reportIntent, getString(R.string.send_report))
-                startActivity(chooserIntent)
-
-            }
             problemSendTo.text = problem.sendTo.ifEmpty{
                 getString(R.string.problem_sendTo)
             }
@@ -117,20 +101,7 @@ class ProblemDetailFragment: Fragment() {
     }
     @SuppressLint("StringFormatInvalid")
     private fun getProblemReport(problem: Problem):String{
-        val solvedString = if(problem.isSolved){
-            getString(R.string.problem_report_solved)
-        }
-        else{
-            getString(R.string.problem_report_unsolved)
-        }
-        val dateString = DateFormat.format(DATE_FORMAT, problem.date).toString()
-        val sendToText = if(problem.sendTo.isBlank()){
-            getString(R.string.problem_report_no_sendTo)
-        }
-        else{
-            getString(R.string.problem_report_sendTo, problem.sendTo)
-        }
-        return getString(R.string.problem_report,problem.title,dateString,solvedString,sendToText)
+        return args.url
     }
     private fun parseContactSelection(contactUri: Uri){
         val queryFields = arrayOf(ContactsContract.Contacts.DISPLAY_NAME)
