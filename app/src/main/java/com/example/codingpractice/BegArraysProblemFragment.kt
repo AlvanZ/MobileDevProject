@@ -26,41 +26,41 @@ class BegArraysProblemFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         // Set up the "Go" button click listener
         binding.buttonGo.setOnClickListener {
+            val url = "https://leetcode.com/problems/two-sum/"
             val action = BegArraysProblemFragmentDirections.actionBegArraysProblemFragmentToProblemDetailFragment2(
-                UUID.randomUUID(), "Two Sum", "https://leetcode.com/problems/two-sum/")
+                UUID.randomUUID(), "Two Sum", url)
             findNavController().navigate(action)
         }
 
         binding.buttonDistributeCandies.setOnClickListener {
             val url = "https://leetcode.com/problems/distribute-candies/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = BegArraysProblemFragmentDirections.actionBegArraysProblemFragmentToProblemDetailFragment2(
+                UUID.randomUUID(), "Distribute Candies", url)
+            findNavController().navigate(action)
 
         }
 
         binding.buttonSingleNumber.setOnClickListener {
             val url = "https://leetcode.com/problems/single-number/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = BegArraysProblemFragmentDirections.actionBegArraysProblemFragmentToProblemDetailFragment2(
+                UUID.randomUUID(), "Single Number", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonMajorityElement.setOnClickListener {
             val url = "https://leetcode.com/problems/majority-element"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = BegArraysProblemFragmentDirections.actionBegArraysProblemFragmentToProblemDetailFragment2(
+                UUID.randomUUID(), "Majority Element", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonMissingNumber.setOnClickListener {
             val url = "https://leetcode.com/problems/missing-number"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = BegArraysProblemFragmentDirections.actionBegArraysProblemFragmentToProblemDetailFragment2(
+                UUID.randomUUID(), "Missing Number", url)
+            findNavController().navigate(action)
         }
 
         // Set up the "Back" button click listener

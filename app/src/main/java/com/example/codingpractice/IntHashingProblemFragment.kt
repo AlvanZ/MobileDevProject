@@ -9,6 +9,7 @@ import com.example.codingpractice.databinding.FragmentIntermediateHashingBinding
 import androidx.navigation.fragment.findNavController
 import android.content.Intent
 import android.net.Uri
+import java.util.UUID
 
 
 class IntHashingProblemFragment : Fragment() {
@@ -28,23 +29,23 @@ class IntHashingProblemFragment : Fragment() {
 
         binding.buttonGoGroupAnagrams.setOnClickListener {
             val url = "https://leetcode.com/problems/group-anagrams/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntHashingProblemFragmentDirections.actionIntHashingProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Group Anagrams", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonValidSudoku.setOnClickListener {
             val url = "https://leetcode.com/problems/valid-sudoku/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntHashingProblemFragmentDirections.actionIntHashingProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Valid Sudoku", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonSortColors.setOnClickListener {
             val url = "https://leetcode.com/problems/sort-colors/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntHashingProblemFragmentDirections.actionIntHashingProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Sort Colors", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonBack.setOnClickListener {

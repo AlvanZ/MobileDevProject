@@ -9,6 +9,7 @@ import com.example.codingpractice.databinding.FragmentBeginnerStringsBinding
 import androidx.navigation.fragment.findNavController
 import android.content.Intent
 import android.net.Uri
+import java.util.UUID
 
 class BegStringsProblemFragment : Fragment() {
     private var _binding: FragmentBeginnerStringsBinding? = null
@@ -27,37 +28,37 @@ class BegStringsProblemFragment : Fragment() {
 
         binding.buttonGo.setOnClickListener {
             val url = "https://leetcode.com/problems/reverse-bits"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = BegStringsProblemFragmentDirections.actionBegStringsProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Reverse Bits", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonPalindromeNumber.setOnClickListener {
             val url = "https://leetcode.com/problems/palindrome-number"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = BegStringsProblemFragmentDirections.actionBegStringsProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Palindrome Number", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonValidPalindrome.setOnClickListener {
             val url = "https://leetcode.com/problems/valid-palindrome"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = BegStringsProblemFragmentDirections.actionBegStringsProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Valid Palindrome", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonLongestPalindrome.setOnClickListener {
             val url = "https://leetcode.com/problems/longest-palindrome"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = BegStringsProblemFragmentDirections.actionBegStringsProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Longest Palindrome", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonFizzBuzz.setOnClickListener {
             val url = "https://leetcode.com/problems/fizz-buzz"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = BegStringsProblemFragmentDirections.actionBegStringsProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Fizz Buzz", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonBack.setOnClickListener {

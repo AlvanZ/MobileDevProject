@@ -9,6 +9,7 @@ import com.example.codingpractice.databinding.FragmentIntermediateQueuesBinding
 import androidx.navigation.fragment.findNavController
 import android.content.Intent
 import android.net.Uri
+import java.util.UUID
 
 class IntQueuesProblemFragment : Fragment() {
     private var _binding: FragmentIntermediateQueuesBinding? = null
@@ -27,23 +28,23 @@ class IntQueuesProblemFragment : Fragment() {
 
         binding.buttonGo.setOnClickListener {
             val url = "https://leetcode.com/problems/flatten-nested-list-iterator"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntQueuesProblemFragmentDirections.actionIntQueuesProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Flatten Nested List Iterator", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonFrontMiddleBackQueue.setOnClickListener {
             val url = "https://leetcode.com/problems/design-front-middle-back-queue"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntQueuesProblemFragmentDirections.actionIntQueuesProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Design Front Middle Back Queue", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonMaximumSumCircularSubArray.setOnClickListener {
             val url = "https://leetcode.com/problems/maximum-sum-circular-subarray"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntQueuesProblemFragmentDirections.actionIntQueuesProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Maximum Sum Circular Subarray", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonBack.setOnClickListener {

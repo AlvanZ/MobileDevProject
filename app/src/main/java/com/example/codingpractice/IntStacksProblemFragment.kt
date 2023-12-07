@@ -9,6 +9,7 @@ import com.example.codingpractice.databinding.FragmentIntermediateStacksBinding
 import androidx.navigation.fragment.findNavController
 import android.content.Intent
 import android.net.Uri
+import java.util.UUID
 
 class IntStacksProblemFragment : Fragment() {
     private var _binding: FragmentIntermediateStacksBinding? = null
@@ -27,23 +28,23 @@ class IntStacksProblemFragment : Fragment() {
 
         binding.buttonGo.setOnClickListener {
             val url = "https://leetcode.com/problems/min-stack/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntStacksProblemFragmentDirections.actionIntStacksProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Min Stack", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonOnlineStockSpan.setOnClickListener {
             val url = "https://leetcode.com/problems/online-stock-span/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntStacksProblemFragmentDirections.actionIntStacksProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Online Stock Span", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonDecodeString.setOnClickListener {
             val url = "https://leetcode.com/problems/decode-string/"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            val action = IntStacksProblemFragmentDirections.actionIntStacksProblemFragmentToProblemDetailFragment(
+                UUID.randomUUID(), "Decode String", url)
+            findNavController().navigate(action)
         }
 
         binding.buttonBack.setOnClickListener {
